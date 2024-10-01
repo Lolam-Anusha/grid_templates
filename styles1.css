@@ -1,0 +1,51 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+       "header header header"
+       "section section section"
+       "aside article article"
+       "aside article article"
+       "aside section2 section2"
+       "footer footer footer"
+       ;
+       border:5px solid black;
+       width:100%;
+       height:100vh;
+       grid-template-rows: auto auto auto auto;
+       grid-template-columns: auto auto auto;
+       grid-column-gap: 20px;
+       grid-row-gap: 20px;
+}
+.items{
+    border: 2px dotted red;
+}
+.header{
+    grid-area: header;
+    border: 2px solid red;
+    background-color: aqua;
+}
+.section{
+    grid-area: section;
+    border: 2px solid red;
+    background-color: blue;
+}
+.aside{
+    grid-area: aside;
+    border: 2px solid red;
+    background-color: brown;
+}
+.article{
+    grid-area: article;
+    border: 2px solid red;
+    background-color: blueviolet;
+}
+.section2{
+    grid-area: section2;
+    border: 2px solid red;
+    background-color: chartreuse;
+}
+.footer{
+    grid-area: footer;
+    border: 2px solid red;
+    background-color: chocolate;
+}
